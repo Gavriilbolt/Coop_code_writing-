@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main Page</title>   
+	<script src="/socket.io/socket.io.js"></script>
+    <script>
+    var socket = io();
+	</script>
+</head>
+<body>
+  <h1>Welcome to my app!</h1>
+  <a href="/registration">Registration</a><br>
+  <a href="/login">Log in</a><br>
+  <a href="/logout">Log out</a>
+  <p id = "authorization">sdfasdfasdf</p>
+  <form method="post" name="form1">
+      <input type="submit" name="createroom" value="Create room">
+	  <input type="submit" name="joinroom" value="Join the room"><br><br>
+	  <label for="filename">Name of file</label>
+      <input type="text" id="filename" name="filename" required>
+	  <input type="submit" name="savenewfile" value="Save new version of file"><br><br>
+  </form>
+</body>
+</html>
